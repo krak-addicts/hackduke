@@ -1,5 +1,9 @@
 package com.example.hackduke;
 
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
+
 public class FoodCalorieTrackerActivity extends Activity {
     private int caloriesToBurn;
     private int height = BMICalculatorActivity.height;
@@ -11,6 +15,13 @@ public class FoodCalorieTrackerActivity extends Activity {
     }
 
     public int caloriesGain() {
+        TextView lose = (TextView)findViewById(R.id.calLose);
+        lose.setText(((Integer)caloriesLose()).toString());
+        TextView gain = (TextView)findViewById(R.id.calGain);
+        gain.setText(((Integer)caloriesGain()).toString());
+        TextView maintain = (TextView)findViewById(R.id.calMaintain);
+        maintain.setText(((Integer)caloriesMaintain()).toString());
+
         if(bmr<1200) {
             return 1200 + caloriesToBurn;
         } else {
