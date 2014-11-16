@@ -38,7 +38,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/username"
-            android:layout_left="@+id/username"
             android:hint="krakaddict3" />
 
         <Button
