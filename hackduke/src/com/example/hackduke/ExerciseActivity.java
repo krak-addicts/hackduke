@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 public class ExerciseActivity extends Activity {
-
+    private int calorie;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -16,6 +16,7 @@ public class ExerciseActivity extends Activity {
 	}
 	public void toCalorie(View view) {
 		Intent intent = new Intent(this, FoodCalorieTrackerActivity.class);
+		intent.putExtra("calorie", calorie);
 		startActivity(intent);
 	}
 	

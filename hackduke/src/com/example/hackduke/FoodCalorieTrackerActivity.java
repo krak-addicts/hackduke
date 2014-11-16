@@ -1,6 +1,7 @@
 package com.example.hackduke;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -12,6 +13,8 @@ public class FoodCalorieTrackerActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_foodcalorietracker);
+        Intent i = getIntent();
+        caloriesToBurn = i.getExtras().getInt("calorie");
     }
 
     public int caloriesGain() {
