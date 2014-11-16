@@ -2,7 +2,6 @@ package com.example.hackduke;
 
 public class FoodCalorieTrackerActivity extends Activity {
     private int caloriesToBurn;
-    private int bmi = BMICalculatorActivity.bmi;
     private int height = BMICalculatorActivity.height;
     private int weight = BMICalculatorActivity.weight;
     private double bmr = 447.593 + (9.247*weight) + (3.098*height) - (4.330*20);

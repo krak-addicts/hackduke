@@ -7,8 +7,8 @@ import android.view.View;
 
 public class BMICalculatorActivity extends Activity{
 	
-	public int height;
-	public int weight;
+	public static int height;
+	public static int weight;
 	public static double bmi;
 	
 	@Override
