@@ -15,11 +15,11 @@ public class FoodCalorieTrackerActivity extends Activity {
     }
 
     public int caloriesGain() {
-        TextView lose = (TextView)findViewById(R.id.calLose);
+        TextView lose = (TextView)findViewById(R.id.lose);
         lose.setText(((Integer)caloriesLose()).toString());
-        TextView gain = (TextView)findViewById(R.id.calGain);
+        TextView gain = (TextView)findViewById(R.id.gain);
         gain.setText(((Integer)caloriesGain()).toString());
-        TextView maintain = (TextView)findViewById(R.id.calMaintain);
+        TextView maintain = (TextView)findViewById(R.id.maintain);
         maintain.setText(((Integer)caloriesMaintain()).toString());
 
         if(bmr<1200) {
