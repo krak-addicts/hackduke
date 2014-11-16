@@ -7,9 +7,9 @@ import android.view.View;
 
 public class BMICalculatorActivity extends Activity{
 	
-	private int height;
+	public int height;
 	public int weight;
-	public double bmi;
+	public static double bmi;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
